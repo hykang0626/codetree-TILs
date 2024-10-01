@@ -10,6 +10,6 @@ for i in range(len(str)):
     elif str[i] == 'R':
         dir_num +=1
     elif str[i] == 'F':
-        x+=dx[dir_num]
-        y+=dy[dir_num]
+        x+=dx[dir_num%4]
+        y+=dy[dir_num%4]
 print(x,y)
