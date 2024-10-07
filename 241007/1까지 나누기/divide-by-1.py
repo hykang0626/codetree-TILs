@@ -1,8 +1,9 @@
 n = int(input())
 
 count = 0
-while n >= 1:
+while True:
     count +=1
-    n /= count
+    n //= count
+    if (n <= 1): break
 
 print(count)
