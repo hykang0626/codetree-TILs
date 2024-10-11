@@ -3,9 +3,9 @@ def check_arr(a, b):
         flag = 0
         if (b[0] == a[i]):
             for j in range(len(b)):
-                
-                if(b[j]==a[i+j]):
-                    flag+=1
+                if i+j < len(a):
+                    if(b[j]==a[i+j]):
+                        flag+=1
             if (flag == len(b)):
                 return True
     return False
