@@ -5,7 +5,7 @@ def Minus(a, c):
 def Multi(a, c):
     return a * c
 def Div(a, c):
-    return a / c
+    return int(a / c)
 
 a, o, c = input().split()
 if o == '+':
