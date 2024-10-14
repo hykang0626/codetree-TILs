@@ -3,7 +3,7 @@ def check_alphabet(a):
     for i in range(len(a)):
         if a[i] not in check:
             check.append(a[i])
-    if len(a)>=2:
+    if len(check)>=2:
         return True
     return False
 
