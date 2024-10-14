@@ -4,4 +4,6 @@ def _print(n):
     _print(n - 1)
     print("HelloWorld")
 
-_print(4)
+n = int(input())
+
+_print(n)
