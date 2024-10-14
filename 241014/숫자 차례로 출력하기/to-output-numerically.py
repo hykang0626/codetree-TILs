@@ -13,5 +13,5 @@ def reverse_num(n):
 
 n = int(input())
 number(n)
-print("", end = "\n")
+print()
 reverse_num(n)
