@@ -10,6 +10,6 @@ def f(n):
             cnt += 1
     if cnt  == len(arr):
         return n
-    return f(n + 1)
+    return f(n + max(arr))
 
 print(f(max(arr)))
