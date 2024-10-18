@@ -13,5 +13,6 @@ min_score = agents[0].score
 min_idx = 0
 for i in range(5):
     if agents[i].score < min_score:
+        min_score = agents[i].score
         min_idx = i 
 print(agents[min_idx].name, agents[min_idx].score)
