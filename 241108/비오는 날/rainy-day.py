@@ -11,11 +11,12 @@ for i in range(n):
     d1, d2, w = tuple(input().split())
     info.append(weather(d1, d2, w))
 
-minyear = 2100
+mindate = 21001212
 mininfo = info[0]
 for i in range(n):
-    
-    if info[i].wea == 'Rain' and int(info[i].date[0:4]) < minyear:
+    y, m, d = info[i].date.split('-')
+    date = int(y)*10000+int(m ) * 100 +int(d)
+    if info[i].wea == 'Rain' and int(date) <= mindate:
         minyear = int(info[i].date[0:4])
         mininfo = info[i]
 print(mininfo.date, mininfo.day, mininfo.wea)
