@@ -16,7 +16,7 @@ mininfo = info[0]
 for i in range(n):
     y, m, d = info[i].date.split('-')
     date = int(y)*10000+int(m ) * 100 +int(d)
-    if info[i].wea == 'Rain' and int(date) <= mindate:
-        minyear = int(info[i].date[0:4])
+    if info[i].wea == 'Rain' and date <= mindate:
+        mindate = date
         mininfo = info[i]
 print(mininfo.date, mininfo.day, mininfo.wea)
