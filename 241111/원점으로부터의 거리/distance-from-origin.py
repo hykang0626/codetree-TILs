@@ -11,7 +11,7 @@ for i in range(n):
     x, y = map(int, input().split())
     dots.append(dot(x, y, i+1))
 
-dots.sort(key = lambda dot : dot.x**2 + dot.y**2)
+dots.sort(key = lambda dot : abs(dot.x) + abs(dot.y))
 
 for d in dots:
     print(d.num)
