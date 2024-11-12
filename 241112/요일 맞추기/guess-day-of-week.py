@@ -1,6 +1,6 @@
 m1, d1, m2, d2 = map(int, input().split())
 
-day_of_week = ['Sun', 'Mon', 'Tue', 'Wed', 'Tue', 'Fri', 'Sat']
+day_of_week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 start = d1
